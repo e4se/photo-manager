@@ -10,5 +10,8 @@
         "npm",
         "package",
         "e4se"
-    ]
+    ],
+    "dependencies": {
+        "jquery": "^3.4.1"
+    }
 }
