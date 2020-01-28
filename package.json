@@ -1,4 +1,14 @@
 {
     "name": "@e4se/photo-manager",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "description": "Removes all spaces from a string",
+    "license": "MIT",
+    "repository": "e4se/photo-manager",
+    "main": "js/index.js",
+    "keywords": [
+        "photo manager",
+        "npm",
+        "package",
+        "e4se"
+    ]
 }
