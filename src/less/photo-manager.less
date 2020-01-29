@@ -13,10 +13,12 @@
   display: none;
   opacity: 0;
   z-index: 99999;
+
   @media @mobile {
-    width: 100%;
-    margin-left: 50%;
+    width: 90%;
+    margin-left: -45%;
   }
+
   #modal_close_upload {
     width: 21px;
     height: 21px;
@@ -83,8 +85,10 @@
 }
 .oneUploadBefore {
   width: calc(100%/6 - 2px);
+  padding-top: calc(100%/6 - 2px);
   @media @mobile {
     width: calc(100%/4 - 2px);
+    padding-top: calc(100%/4 - 2px);
   }
   overflow: hidden;
   display: inline-block;
@@ -96,9 +100,19 @@
   text-align: center;
   img{
     height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
   }
   video{
     height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
   }
 }
 .beforeUploads{
