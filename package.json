@@ -4,7 +4,7 @@
     "description": "Removes all spaces from a string",
     "license": "MIT",
     "repository": "e4se/photo-manager",
-    "main": "build/index.min.js",
+    "main": "build/js/index.min.js",
     "keywords": [
         "photo manager",
         "npm",
