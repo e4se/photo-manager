@@ -12,7 +12,13 @@ $(function(){
 				$('#progress'+index).prop('value', event.loaded);
 			}
 			ajax.onload = function() {
-				var file=JSON.parse(ajax.response);
+				try {
+                    var file=JSON.parse(ajax.response);
+                }catch (error) { 
+                    alert('Что-то пошло не так, возможно файл превышает лимит загрузки. (50мб)');
+					$('#progress'+index).remove();
+                    return true;
+                }
 				if(file.error){
 					alert(file.error);
 					$('#progress'+index).remove();
